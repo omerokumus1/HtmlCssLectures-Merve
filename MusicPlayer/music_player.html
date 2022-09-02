@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <style>
+      body {
+        padding: 20px;
+      }
+
+      .main-container {
+        width: 500px;
+        height: 1000px;
+      }
+      .image-container {
+        width: 500px;
+        height: auto;
+      }
+      .image {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .player-container {
+        width: 500px;
+        height: 500px;
+      }
+      .music-name {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+      }
+      .artist-name {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+      }
+      .audio-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="image-container">
+        <img src="musicplayerimg.avif" alt="music image" class="image" />
+      </div>
+
+      <div class="player-container">
+        <div class="music-name">
+            <strong>This is a music name</strong>
+        </div>
+        <div class="artist-name">
+            <strong>This is an artist name</strong>
+        </div>
+        <div class="audio-container">
+            <audio controls style="width: 400px;">
+            </audio>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
