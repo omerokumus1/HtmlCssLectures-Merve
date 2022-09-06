@@ -1,0 +1,45 @@
+<!--
+    Attributes: HTML elemanlarını özelleştirebilmemiz için kullanılan yapılar
+        <tagname attr1="" attr2="" ... attrN=""> </tagname>
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="https://www.google.com.tr">click to go to google</a>
+    <br />
+    <!--
+        URL: https:// ile başlar. tıklandığında tüm linki değiştirir
+        URL Fragment: https:// ile başlamaz. Var olan o anki linkin sonuna eklenir
+            Örn;
+                <a href="/Home">Home</a>
+                tıklandığında var olan linkin sonuna /Home ekler
+                127.0.0.1:5500 -> 127.0.0.1:5500/Home
+     -->
+    <a href="/Home">Home</a>
+    <br />
+    <img
+      src="https://www.loulou.com.tr/wp-content/uploads/2016/11/papagan-loulou-480x480.png"
+      width="200"
+      height="300"
+      alt="Papağan resmi"
+    />
+    <br />
+    <!-- style attribute -->
+    <p
+      style="
+        color: red;
+        font-size: x-large;
+        font-family: 'Times New Roman', Times, serif;
+      "
+    >
+      This is a paragraph
+    </p>
+  </body>
+</html>
