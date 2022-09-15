@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  background-color: rgb(212, 212, 212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+}
+
+.comm-area {
+  width: 650px;
+  height: 80%;
+  display: flex;
+}
+
+.img-container {
+  width: 350px;
+}
+
+.sneaker-img {
+  width: 100%;
+  height: 100%;
+}
+
+.details-area {
+  padding: 30px 15px;
+  background-color: white;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text-container {
+  width: 100%;
+  flex-grow: 3;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+.paragraph {
+  padding-top: 20px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.button-container {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.action-button {
+  border: 1px solid black;
+  background-color: white;
+  box-sizing: content-box;
+  padding: 10px;
+}
