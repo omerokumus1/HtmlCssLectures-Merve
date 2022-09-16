@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 50px;
+  height: 600px;
+  background-color: lightgray;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.date-container {
+  flex-grow: 0.3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  font-size: 30px;
+}
+
+p {
+  text-align: center;
+}
+
+.arrow {
+  width: 50px;
+  color: white;
+}
+
+.date {
+  width: 300px;
+  color: white;
+}
+
+span {
+  opacity: 0.6;
+}
+
+.grid-container {
+  border: 2px solid gray;
+  border-top-color: red;
+  flex-grow: 5.5;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr repeat(5, 2fr);
+}
+
+.item {
+  border: 1px solid rgb(102, 51, 153, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item.first-row {
+  font-size: 16px;
+  background-color: rgb(178, 172, 172);
+}
+
+.item.off-month {
+  color: rgb(159, 159, 159);
+}
+
+.item.weekend {
+  background-color: rgb(197, 197, 197);
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
