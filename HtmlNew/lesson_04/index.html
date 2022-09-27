@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ömer Faruk Okumuş" />
+    <meta
+      name="description"
+      content="This page is all about what I am going to learn about HTML"
+    />
+    <title>My First Web Page</title>
+    <link rel="icon" href="html5.png" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-size: 22px;
+        background-color: wheat;
+        height: 200vh;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Goals for the Year</h1>
+
+      <hr />
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li>
+            <a href="#learning_html">Learning HTML</a>
+            <ul>
+              <li>
+                <a href="#daily_schedule">Daily Schedule</a>
+              </li>
+
+              <li>
+                <a href="#example_learning">Example Learning</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#planning_vacation">Planning Vacation</a>
+            <ul>
+              <li>
+                <a href="#places_to_go">Places to go</a>
+              </li>
+              <li>
+                <a href="#places_to_avoid">Places to avoid</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <article id="html">
+        <h2 id="learning_html">
+          <a href="#learning_html">I am ready to learn HTML</a>
+        </h2>
+        <p>This is my first web page</p>
+
+        <section>
+          <h3 id="daily_schedule">
+            <a href="#daily_schedule">My Daily Schedule</a>
+          </h3>
+          <p>Let me tell you how:</p>
+          <ol>
+            <li>I learn more about web developing</li>
+            <li>I plan out my schedule</li>
+            <li>
+              I use resources from
+              <abbr title="Mozilla Developer Network">MDN</abbr>
+            </li>
+          </ol>
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark>number of hours</mark> I code per day
+              </summary>
+              <p>
+                I start at <time datetime="08:00">8 am</time> and I write code
+                for <time datetime="PT3H">3 hours</time> every morning.
+              </p>
+            </details>
+          </aside>
+          <br />
+          <table>
+            <caption>
+              My Daily Schedule
+            </caption>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="08:00">8am</time>-<time datetime="11:00"
+                    >11am</time
+                  >
+                </td>
+                <td>Write Code</td>
+              </tr>
+              <tr>
+                <th scope="row">Break</th>
+                <td>
+                  <time datetime="11:00">11am</time>-<time datetime="12:00"
+                    >12pm</time
+                  >
+                </td>
+                <td>Eat Lunch</td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <time datetime="12:00">12pm</time>-<time datetime="17:00"
+                    >5pm</time
+                  >
+                </td>
+                <td>Study for Other Courses</td>
+              </tr>
+              <tr>
+                <th scope="row">Evening</th>
+                <td>All Other Times</td>
+                <td>Free Time</td>
+              </tr>
+              <tr>
+                <th scope="row">Night</th>
+                <td>Sleep</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h3 id="example_learning">
+            <a href="#example_learning">Example Learning</a>
+          </h3>
+
+          <p>
+            Here is what I learned on
+            <time datetime="2022-09-23">23<sup>rd</sup> September 2022</time>
+          </p>
+          <ul>
+            <li>
+              I can write numbers as subscripts via
+              <code>&lt;sub&gt;</code> element.
+            </li>
+            <li>
+              <p>Here is a JS code:</p>
+              <pre><code>  const para = document.querySelector('p');
+
+      para.onclick = function() {
+        alert('Owww, stop poking me!');
+      }</code></pre>
+              Here, <var>para</var> is a constant variable.
+            </li>
+            <li>
+              You can format the code document by
+              <kbd>opt</kbd>+<kbd>shift</kbd>+
+              <kbd>F</kbd>
+            </li>
+            <li>
+              The result of the polynomial <var>x</var><sup>2</sup> when
+              <var>x</var> = <kbd>5</kbd> is <samp>25</samp>.
+            </li>
+            <li>
+              Apart from coding, I learned something different. Rocky Balboa
+              says
+              <blockquote cite="https://tr.wikipedia.org/wiki/Rocky">
+                It ain't about how hard you hit. It's about how hard you can get
+                hit and keep moving forward.
+              </blockquote>
+              It is quite aligned with
+              <a href="https://www.youtube.com/watch?v=0c3KbNGpNYs"
+                ><cite>Kobe Bryant's words</cite></a
+              >:
+              <q>Be the best version of yourself.</q>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <hr />
+
+      <article id="vacation">
+        <h2 id="planning_vacation">
+          <a href="#planning_vacation">I am Also Planning a Vacation</a>
+        </h2>
+
+        <p>I've been working hard and <em>really need a getaway</em>.</p>
+        <p>
+          I live in <abbr title="Kansas">KN</abbr> so I want to visit a beach.
+        </p>
+        <section>
+          <h3 id="places_to_go">
+            <a href="#places_to_go">Place I'd Like to Visit</a>
+          </h3>
+          <ul>
+            <li>
+              <p>I've heard good things about the Caribbean</p>
+              <figure>
+                <img
+                  src="img/caribbean.jpeg"
+                  alt="Caribbean Beach"
+                  title="A place I want to visit"
+                />
+                <figcaption>Caribbean Beach</figcaption>
+              </figure>
+            </li>
+
+            <li>I saw Hawaii's clean water.</li>
+            <li>Additionally, Dubai's huge towers are attractive.</li>
+            <li>
+              <dl>
+                <dt>I've heard good things about going here:</dt>
+                <dd>
+                  <!-- Arama motoru beslemek amaçlı address elementi kullanılır -->
+                  <address>
+                    Margaritaville Island Reserve Riviera Cancún<br />
+                    Bahia Petempich Puerto Morelos, Mexico<br />
+                    Colonia Morelos, México 77580
+                  </address>
+                  <figure>
+                    <img
+                      src="img/vacation.jpeg"
+                      alt="Cancun Vacation"
+                      title="Very beautiful place"
+                      width="400"
+                      height="267"
+                      loading="lazy"
+                    />
+                    <figcaption>A Caribbean Vacation Image</figcaption>
+                  </figure>
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3 id="places_to_avoid">
+            <a href="#places_to_avoid">Places I Want to Avoid</a>
+          </h3>
+          <!-- <ul> -->
+          <dl>
+            <dt>North Pole</dt>
+            <dd>I know that this place is <strong>very cold</strong>!</dd>
+
+            <dt>South Pole</dt>
+            <dd>This is also <strong>cold</strong>.</dd>
+          </dl>
+        </section>
+      </article>
+    </main>
+    <!-- </ul> -->
+    <hr />
+
+    <footer>
+      <p>
+        &lt;&lt;&lt; &copy;
+        <a href="about.html">Ömer Faruk Okumuş </a>&gt;&gt;&gt;
+      </p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+  </body>
+</html>
+
+<!--
+    Tags:
+        - aside
+        - details, summary
+        - table, thead, th, td, tr
+
+
+    Subjects
+        -
+ -->
