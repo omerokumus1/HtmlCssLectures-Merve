@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planets</title>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-size: 22px;
+        background-color: wheat;
+        height: 200vh;
+      }
+
+      table,
+      th,
+      td,
+      caption {
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        padding: 5px;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Data about the planets of our solar system (Planetary facts taken from
+        Nasa's Planetary Fact Sheet - Metric).
+      </caption>
+      <thead>
+        <!-- colspan=2 -> her satırın ilk 2 elemanı bu sütun altında olacak -->
+        <th colspan="2">&nbsp;</th>
+        <th scope="col">Name</th>
+        <th scope="col">Mass (10<sup>24</sup>kg )</th>
+        <th scope="col">Diameter(km)</th>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- rowspan=5 -> kendisi dahil aşağı doğru gelen 5 satırı kapsayacak -->
+          <th rowspan="5" colspan="2">Terrestial Planets</th>
+        </tr>
+        <tr>
+          <th scope="row">Mercury</th>
+          <td>0.330</td>
+          <td>4,879</td>
+        </tr>
+        <tr>
+          <th>Venus</th>
+          <td>4.87</td>
+          <td>12,104</td>
+        </tr>
+        <tr>
+          <th>Earth</th>
+          <td>5.97</td>
+          <td>12,756</td>
+        </tr>
+        <tr>
+          <th>Mars</th>
+          <td>0.642</td>
+          <td>6.792</td>
+        </tr>
+
+        <tr>
+          <th rowspan="7" scope="row">Jovian Planets</th>
+        </tr>
+        <tr>
+          <th rowspan="3">Gas Giants</th>
+        </tr>
+        <tr>
+          <th scope="row">Jupiter</th>
+          <td>1898</td>
+          <td>142,984</td>
+        </tr>
+        <tr>
+          <th scope="row">Saturn</th>
+          <td>568</td>
+          <td>120,536</td>
+        </tr>
+        <tr>
+          <th rowspan="3">Ice Giants</th>
+        </tr>
+        <tr>
+          <th scope="row">Uranüs</th>
+          <td>86.8</td>
+          <td>51,118</td>
+        </tr>
+        <tr>
+          <th scope="row">Neptune</th>
+          <td>102</td>
+          <td>49.528</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
